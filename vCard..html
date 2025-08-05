@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tarjeta de Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4a90e2;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .name {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #333;
+            margin: 0 0 5px;
+        }
+        .title {
+            font-size: 1.1em;
+            color: #666;
+            margin: 0 0 20px;
+        }
+        .contact-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .contact-button:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-button i {
+            margin-right: 15px;
+            font-size: 1.2em;
+            color: #4a90e2;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #888;
+            font-size: 1.8em;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #4a90e2;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .name {
+                font-size: 1.8em;
+            }
+            .title {
+                font-size: 1em;
+            }
+            .contact-button {
+                padding: 12px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Foto de Perfil" class="profile-pic">
+
+        <h1 class="name">Tu Nombre Completo</h1>
+
+        <p class="title">Tu Título o Breve Descripción</p>
+
+        <a href="#" class="contact-button">
+            <i class="fas fa-phone"></i> Llamar
+        </a>
+        <a href="#" class="contact-button">
+            <i class="fas fa-envelope"></i> Enviar Correo
+        </a>
+        <a href="#" class="contact-button">
+            <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+        </a>
+
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+</body>
+</html>
